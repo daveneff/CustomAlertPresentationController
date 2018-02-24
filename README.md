@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
 
 	func displayCustomAlert() {
 		let customAlertController = MyCustomAlertController()
-	        customAlertController.transitioningDelegate = addCameraTransitioningManager
+	        customAlertController.transitioningDelegate = transitioningManager
         	customAlertController.modalPresentationStyle = .custom
         	present(customAlertController, animated: true)
 	}
