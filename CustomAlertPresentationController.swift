@@ -55,7 +55,11 @@ final class CustomAlertPresentationController: UIPresentationController {
     }
     
     override func size(forChildContentContainer container: UIContentContainer, withParentContainerSize parentSize: CGSize) -> CGSize {
-        return CGSize(width: parentSize.width * 0.725, height: parentSize.width * 0.891)
+        let defaultAlertWidthMultiplier = 0.725
+        let defaultAlertHeightMultiplier = 0.891
+      
+        return CGSize(width: parentSize.width * defaultAlertWidthMultiplier,
+                      height: parentSize.width * defaultAlertHeightMultiplier)
     }
     
 }
